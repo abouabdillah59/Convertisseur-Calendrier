@@ -16,3 +16,15 @@ else [ $type = "Gregorien" -o $type = "gregorien" -o $type = "grégorien" ]
          echo "Année Hegirienne:" $(($ang - 622 + ($ang - 622) * 11/355))
      fi
 fi
+
+read -p "Voulez vous entrer une autre date?"  encor
+if [ $encor = "oui" ]
+then 
+     ./heggreg.sh
+else 
+    echo "salam"
+fi
+
+
+
+
